@@ -1,25 +1,22 @@
-export const CHAT_DATA = [
-    {
-        prompt: "What can you do?",
-        answer: "I am a Smart AI Assistant designed to quickly show you key features of our new solution right here in the banner ad. Think of me as your personal guide!",
-        key: "A"
-    },
-    {
-        prompt: "Show me a feature",
-        answer: "Our top feature is **Real-time Data Sync**. It updates your dashboard instantly, ensuring you always have the latest information at your fingertips. No more manual refreshes!",
-        key: "B"
-    },
-    {
-        prompt: "Tell me more about the solution",
-        answer: "The solution is a comprehensive platform for business analytics, streamlining data management and reporting. It's built for speed and simplicity. Click the banner to see a full demo!",
-        key: "C"
-    }
+export const WELCOME_MESSAGE = "Hi! I'm your Smart AI Assistant. How can I help!";
+
+export const SUGGESTED_PROMPTS = [
+  { id: "capabilities", text: "What can you do?" },
+  { id: "feature", text: "Show me a feature" },
+  { id: "more", text: "Tell me more" },
+  { id: "how", text: "How does this work?" },
+  { id: "cta", text: "Where do I start?" },
 ];
 
-export const INITIAL_WELCOME_MESSAGE = {
-    id: 0,
-    text: "Hi! I’m your Smart AI Assistant. Ask me anything!",
-    sender: 'ai',
-    animate: true // Ensure this is animated
+export const PRESET_ANSWERS = {
+  capabilities:
+    "I simulate an AI chat inside a banner—offering quick answers, smooth animations, and an engaging UI.",
+  feature:
+    "Check the typing indicator, auto-scroll, and responsive bubbles. Click another prompt to see more.",
+  more:
+    "This ad runs fully client-side, uses no heavy libraries, and is optimized for speed and usability.",
+  how:
+    "You click a suggested question, I respond with pre-set answers, and the chat auto-scrolls with typing.",
+  cta:
+    "Start exploring by clicking any prompt below. You can restart anytime to replay the flow.",
 };
-

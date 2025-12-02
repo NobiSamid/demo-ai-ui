@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
 
-const AskButton = () => {
+const AskButton = ({ prompts, onClick }) => {
   return (
-    <div>AskButton</div>
-  )
-}
+    <div>
+      {prompts.map((p) => (
+        <button
+          key={p.id}
+          onClick={() => onClick(p)}
+          aria-label={`Ask: ${p.text}`}
+        >
+          {p.text}
+        </button>
+      ))}
+    </div>
+  );
+};
 
-export default AskButton
+export default AskButton;
