@@ -55,7 +55,7 @@ const ChatWindow = () => {
         <div>
           <AskButton prompts={availablePrompts} onClick={onPromptClick} />
           <div>
-            <button onClick={onRestart}>
+            <button className="restart" onClick={onRestart}>
               Restart
             </button>
           </div>

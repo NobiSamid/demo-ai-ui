@@ -1,3 +1,3 @@
 export function ChatBubble({ role = "ai", text }) {
-  return <div className={`${role}`}>{text}</div>;
+  return <div className={`msg ${role}`}>{text}</div>;
 }
