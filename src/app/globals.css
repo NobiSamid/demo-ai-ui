@@ -85,6 +85,12 @@ body {
   margin: 6px 0;
   font-size: 12px;
   line-height: 1.35;
+  opacity: 0;
+  transform: translateY(6px);
+  animation: fadeInUp 240ms ease forwards;
+}
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .restart {
@@ -97,3 +103,6 @@ body {
   color: var(--text);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
+
+.ai { background: var(--bubble-ai); color: var(--text); border-bottom-left-radius: 4px; }
+.user { background: var(--bubble-user); color: white; border-bottom-right-radius: 4px; }
